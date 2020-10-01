@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
+        git 'https://github.com/lerndevops/samplejavaapp.git'
         sh script: 'mvn clean compile'
             }
                      }
