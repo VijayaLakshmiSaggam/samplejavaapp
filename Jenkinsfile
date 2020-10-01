@@ -1,9 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Clone sources') {
+           git url: 'https://github.com/jfrogdev/project-examples.git'
+                           }
     stage('Compile') {
       steps {
-        git 'https://github.com/lerndevops/samplejavaapp.git'
         sh script: 'mvn clean compile'
             }
                      }
@@ -19,3 +21,4 @@ pipeline {
                      }
          }
          }
+
