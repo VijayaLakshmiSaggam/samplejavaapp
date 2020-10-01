@@ -2,7 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Clone sources') {
-           git url: 'https://github.com/VijayaLakshmiSaggam/samplejavaapp'
+        
+          git clone: 'https://github.com/VijayaLakshmiSaggam/samplejavaapp'
+          pwd
                            }
     stage('Compile') {
       steps {
