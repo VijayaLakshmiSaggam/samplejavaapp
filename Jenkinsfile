@@ -1,11 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('Clone sources') {
+    // stage('Clone sources') {
         
           // git clone: 'https://github.com/VijayaLakshmiSaggam/samplejavaapp'
           // pwd
-                           }
+                          // } 
     stage('Compile') {
       steps {
         sh script: 'mvn clean compile'
