@@ -6,7 +6,7 @@ stage('clone repo') {
               sh("""
               git config --global credential.username VijayaLakshmiSaggam
               git config --global credential.helper "!echo password=Project20a; echo"
-              git clone https://github.com/VijayaLakshmiSaggam/samplejavaapp.git
+              git clone https://github.com/VijayaLakshmiSaggam/helloworld.git
               echo "pulled the code"
               """)
           }
