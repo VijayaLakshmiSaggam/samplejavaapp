@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Clone sources') {
         
-          git clone: 'https://github.com/VijayaLakshmiSaggam/samplejavaapp'
-          pwd
+          // git clone: 'https://github.com/VijayaLakshmiSaggam/samplejavaapp'
+          // pwd
                            }
     stage('Compile') {
       steps {
